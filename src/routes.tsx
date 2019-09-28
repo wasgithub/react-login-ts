@@ -22,7 +22,7 @@ const Routes = () => (
     <BrowserRouter>
         <Switch>
             <Route exact path="/" component={() => <Login />} />
-            <PrivateRoute path="/app" component={ () => <h1>Esta logado...</h1>}/>
+            <PrivateRoute exact path="/app" component={ () => <h1>Esta logado...</h1>}/>
         </Switch>
     </ BrowserRouter>
 );
